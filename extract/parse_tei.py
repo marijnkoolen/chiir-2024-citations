@@ -23,6 +23,7 @@ def get_name_space(tag: str):
         tag_name_space = ns['w3']
     return tag_name_space
 
+
 def has_tag(ele: Element, tag: str):
     tag_name_space = get_name_space(tag)
     return ele.tag == "{" + tag_name_space + "}" + tag
